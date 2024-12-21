@@ -1,0 +1,132 @@
+/* Імпорт шрифту "Inter" */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Загальні стилі для сторінки */
+body {
+    font-family: 'Inter', sans-serif; /* Основний шрифт для сторінки */
+    background-color: #f9f9f9; /* Світло-сірий фон */
+    margin: 0; /* Забираємо відступи навколо сторінки */
+    padding: 0; /* Забираємо відступи всередині сторінки */
+}
+
+/* Секція Header */
+header {
+    display: flex; /* Вирівнюємо елементи в лінію */
+    align-items: center; /* Вирівнювання по вертикалі */
+    justify-content: space-between; /* Простір між логотипом і меню */
+    padding: 20px 60px; /* Внутрішній відступ з боків */
+    background-color: #fff; /* Білий фон */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Легка тінь під хедером */
+}
+
+/* Логотип */
+.logo {
+    width: 160px; /* Задаємо фіксовану ширину */
+    height: auto; /* Пропорційна висота */
+}
+
+/* Секція меню */
+.menu {
+    display: flex; /* Вирівнюємо пункти меню в ряд */
+    gap: 20px; /* Відстань між пунктами */
+}
+
+.menu-elements, .menu-elements-red {
+    text-decoration: none; /* Забираємо підкреслення у посилань */
+    font-size: 18px; /* Розмір шрифту */
+    text-transform: uppercase; /* Усі літери великими */
+    color: #676767; /* Основний сірий колір тексту */
+    position: relative; /* Для можливості додавання анімації */
+    transition: color 0.3s; /* Плавна зміна кольору при наведенні */
+}
+
+/* Ховер-ефект для пунктів меню */
+.menu-elements:hover, .menu-elements-red:hover {
+    color: #000; /* Змінюємо колір тексту на чорний */
+}
+
+/* Пункти меню зі знижками */
+.menu-elements-red {
+    color: #ff0000; /* Червоний текст */
+}
+
+/* Банерна секція */
+.banner-section {
+    text-align: center; /* Центруємо елементи */
+    margin: 20px 0; /* Відступи зверху і знизу */
+}
+
+.loft {
+    width: 100%; /* Банер займає всю ширину */
+    height: auto; /* Пропорційна висота */
+    border-radius: 10px; /* Закруглені кути */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Легка тінь під банером */
+}
+
+/* Рядок з банерами */
+.banner-row {
+    display: flex; /* Вирівнюємо банери в ряд */
+    justify-content: center; /* Центруємо банери */
+    gap: 20px; /* Відстань між банерами */
+    margin-top: 20px; /* Відступ зверху */
+}
+
+.loft-1 {
+    width: 45%; /* Ширина банера відносно контейнера */
+    height: auto; /* Пропорційна висота */
+    border-radius: 10px; /* Закруглені кути */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавна зміна розміру і тіні */
+}
+
+/* Ховер-ефект для банерів */
+.loft-1:hover {
+    transform: scale(1.05); /* Масштабування на 5% */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Більша тінь при наведенні */
+}
+
+/* Логотипи брендів */
+.brands {
+    text-align: center; /* Центруємо логотипи */
+    margin: 40px 0; /* Відступи зверху і знизу */
+}
+
+.brands-logos {
+    display: flex; /* Вирівнюємо логотипи в ряд */
+    justify-content: center; /* Центруємо логотипи */
+    gap: 40px; /* Відстань між логотипами */
+    flex-wrap: wrap; /* Логотипи переходять на новий ряд за потреби */
+}
+
+.band {
+    width: 100px; /* Фіксована ширина логотипу */
+    height: 100px; /* Фіксована висота логотипу */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавна зміна розміру і тіні */
+}
+
+.band:hover {
+    transform: scale(1.1); /* Масштабування на 10% */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Тінь при наведенні */
+}
+
+/* Footer */
+.footer {
+    display: flex; /* Вирівнюємо стовпці футера в ряд */
+    justify-content: space-around; /* Простір між стовпцями */
+    padding: 20px 50px; /* Внутрішні відступи */
+    background-color: #f1f1f1; /* Світло-сірий фон футера */
+    border-top: 2px solid #ddd; /* Верхня границя футера */
+}
+
+.column {
+    text-align: left; /* Текст вирівнюється ліворуч */
+}
+
+.column p {
+    margin: 10px 0; /* Відступи між рядками */
+    font-size: 14px; /* Розмір тексту */
+    color: #555; /* Сірий текст */
+}
+
+.column p:hover {
+    color: #000; /* Чорний текст при наведенні */
+}
